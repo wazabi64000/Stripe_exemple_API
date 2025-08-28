@@ -5,7 +5,7 @@ import { authenticate } from "../middleware/auth.js";
 import { db } from "../db.js";
 
 const router = express.Router();
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, { apiVersion: "2025-08-26" });
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, { apiVersion: "2025-07-30.basil" });
 
 // Middlewares globaux pour ce router
 router.use(express.json());       // Pour parser JSON
